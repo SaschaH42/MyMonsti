@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="xDrip Broadcast Settings">
+
+        <EditTextPreference
+            app:key="xdrip_package_name"
+            app:title="xDrip Package Name"
+            app:defaultValue="com.eveningoutpost.dexdrip"
+            app:summary="The package name of the xDrip app" />
+
+        <EditTextPreference
+            app:key="broadcast_receiver_action"
+            app:title="Receiver Action"
+            app:defaultValue="com.eveningoutpost.dexdrip.watch.wearintegration.BROADCAST_SERVICE_RECEIVER"
+            app:summary="Action used to send data to xDrip" />
+
+        <EditTextPreference
+            app:key="broadcast_sender_action"
+            app:title="Sender Action"
+            app:defaultValue="com.eveningoutpost.dexdrip.watch.wearintegration.BROADCAST_SERVICE_SENDER"
+            app:summary="Action used to receive data from xDrip" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="API Settings">
+
+        <EditTextPreference
+            app:key="api_endpoint"
+            app:title="API Endpoint"
+            app:defaultValue="http://127.0.0.1:17580"
+            app:summary="The base URL for the xDrip web service" />
+
+        <EditTextPreference
+            app:key="treatments_count"
+            app:title="Treatment History Count"
+            app:defaultValue="100"
+            app:summary="Number of treatments to fetch" />
+
+        <EditTextPreference
+            app:key="glucose_count"
+            app:title="Glucose History Count"
+            app:defaultValue="600"
+            app:summary="Number of glucose values to fetch for correlation" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Display Settings">
+
+        <EditTextPreference
+            app:key="glucose_match_window"
+            app:title="Glucose Match Window (Minutes)"
+            app:defaultValue="20"
+            app:summary="Time window to match glucose values to treatments" />
+
+        <SwitchPreferenceCompat
+            app:key="show_debug"
+            app:title="Show Debug Window"
+            app:defaultValue="false" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
