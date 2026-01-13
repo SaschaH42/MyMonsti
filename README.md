@@ -5,6 +5,12 @@ This is a companion app for xDrip. It shows the Treatments and adds treatments i
 It utilizes the xDrip Broadcast API (for adding new treatments and reading the actual glucose value)  
 It utilizes the xDrip Webservice (for requesting past treatments and glucose values)
 
+## App Images
+![Treatments](/Images/MyMonsti_Treatments.jpg)
+![History](/Images/MyMonstiTreatmentHistory.jpg)
+
+
+
 ## Required xDrip Settings
 
 ### Settings
